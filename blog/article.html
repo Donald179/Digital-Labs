@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Article du blog informatique. Le contenu et les métadonnées SEO sont chargés depuis Supabase si l'article est publié.">
+    <meta name="keywords" content="assistance informatique, dépannage informatique, Bobo-Dioulasso">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Services Informatiques en Ligne">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://example.com/blog/article.html">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon/favicon.svg">
+    <title>Article | Blog informatique</title>
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Article du blog informatique">
+    <meta property="og:description" content="Conseil informatique publié sur le blog.">
+    <meta property="og:url" content="https://example.com/blog/article.html">
+    <meta property="og:image" content="https://images.pexels.com/photos/7709171/pexels-photo-7709171.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Article du blog informatique">
+    <meta name="twitter:description" content="Conseil informatique publié sur le blog.">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/7709171/pexels-photo-7709171.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-page="article">
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+    <nav class="navbar navbar-expand-lg fixed-top site-navbar" aria-label="Navigation principale">
+        <div class="container">
+            <a class="navbar-brand brand-mark" href="../index.html"><span class="brand-symbol" aria-hidden="true">SI</span><span class="js-site-name">Services Informatiques en Ligne</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Ouvrir le menu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../telechargement.html">Téléchargement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../a-propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta" href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="article-main">
+        <article id="articlePage" class="section-pad" aria-live="polite">
+            <div class="container narrow-content">
+                <div id="articleContainer">
+                    <div class="skeleton-line"></div>
+                    <div class="skeleton-line short"></div>
+                </div>
+                <aside class="related-wrap mt-5" aria-labelledby="recent-title">
+                    <h2 id="recent-title" class="h3">Articles récents</h2>
+                    <div id="recentPosts" class="row g-4"></div>
+                </aside>
+                <aside class="related-wrap mt-5" aria-labelledby="related-title">
+                    <h2 id="related-title" class="h3">Articles similaires</h2>
+                    <div id="relatedPosts" class="row g-4"></div>
+                </aside>
+            </div>
+        </article>
+    </main>
+    <footer class="site-footer"><div class="container"><div class="footer-bottom border-0 pt-0"><span>&copy; <span id="currentYear"></span> <span class="js-site-name">Services Informatiques en Ligne</span>.</span><a href="../blog.html">Retour au blog</a></div></div></footer>
+    <div id="toastHost" class="toast-host" aria-live="polite" aria-atomic="true"></div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="../js/config.js"></script>
+    <script defer src="../js/utils.js"></script>
+    <script defer src="../js/supabase.js"></script>
+    <script defer src="../js/main.js"></script>
+    <script defer src="../js/blog.js"></script>
+</body>
+</html>

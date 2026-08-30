@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez le service d'assistance informatique à Bobo-Dioulasso, secteur 18, via formulaire, WhatsApp, téléphone ou email après configuration des coordonnées.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Services Informatiques en Ligne">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://example.com/contact.html">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon/favicon.svg">
+    <title>Contact | Assistance informatique à Bobo-Dioulasso</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact assistance informatique">
+    <meta property="og:description" content="Décrivez votre problème informatique et recevez une orientation adaptée.">
+    <meta property="og:url" content="https://example.com/contact.html">
+    <meta property="og:image" content="https://images.pexels.com/photos/7709171/pexels-photo-7709171.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact assistance informatique">
+    <meta name="twitter:description" content="Formulaire de contact pour une assistance informatique en ligne ou à Bobo-Dioulasso.">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/7709171/pexels-photo-7709171.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact",
+        "url": "https://example.com/contact.html",
+        "inLanguage": "fr-FR"
+    }
+    </script>
+</head>
+<body data-page="contact">
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+    <nav class="navbar navbar-expand-lg fixed-top site-navbar" aria-label="Navigation principale">
+        <div class="container">
+            <a class="navbar-brand brand-mark" href="index.html"><span class="brand-symbol" aria-hidden="true">SI</span><span class="js-site-name">Services Informatiques en Ligne</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Ouvrir le menu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="telechargement.html">Téléchargement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <header class="page-hero" style="--hero-image: url('https://images.pexels.com/photos/7709171/pexels-photo-7709171.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=700&w=1600');">
+            <div class="container page-hero-content reveal">
+                <p class="eyebrow">Contact</p>
+                <h1>Décrivez votre besoin informatique</h1>
+                <p>Un message clair permet de mieux orienter l'assistance : logiciel concerné, appareil, blocage rencontré et urgence éventuelle.</p>
+            </div>
+        </header>
+
+        <section class="section-pad" id="contactPage">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5 reveal">
+                        <div class="contact-panel">
+                            <h2>Coordonnées</h2>
+                            <ul class="contact-list">
+                                <li><i class="bi bi-whatsapp" aria-hidden="true"></i><span><strong>WhatsApp</strong><a class="js-contact-whatsapp" href="#">À renseigner</a></span></li>
+                                <li><i class="bi bi-telephone" aria-hidden="true"></i><span><strong>SMS / Appels</strong><a class="js-contact-phone" href="#">À renseigner</a></span></li>
+                                <li><i class="bi bi-envelope" aria-hidden="true"></i><span><strong>Email</strong><a class="js-contact-email" href="#">À renseigner</a></span></li>
+                                <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span><strong>Localisation</strong><span class="js-location">Bobo-Dioulasso, secteur 18</span></span></li>
+                            </ul>
+                            <p class="small muted mt-4">Renseignez les coordonnées dans <code>js/config.js</code>. Les champs vides ne sont pas remplacés par des informations inventées.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 reveal">
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Nom</label>
+                                    <input id="name" name="name" class="form-control form-control-lg" type="text" autocomplete="name" maxlength="80" required>
+                                    <div class="invalid-feedback">Indiquez un nom valide.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input id="email" name="email" class="form-control form-control-lg" type="email" autocomplete="email" maxlength="160" required>
+                                    <div class="invalid-feedback">Indiquez un email valide.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Téléphone</label>
+                                    <input id="phone" name="phone" class="form-control form-control-lg" type="tel" autocomplete="tel" maxlength="30" required>
+                                    <div class="invalid-feedback">Indiquez un téléphone valide.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="subject" class="form-label">Sujet</label>
+                                    <input id="subject" name="subject" class="form-control form-control-lg" type="text" maxlength="120" required>
+                                    <div class="invalid-feedback">Indiquez un sujet valide.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" name="message" class="form-control form-control-lg" rows="6" maxlength="1500" required></textarea>
+                                    <div class="invalid-feedback">Votre message doit contenir au moins 10 caractères.</div>
+                                </div>
+                                <div class="visually-hidden" aria-hidden="true">
+                                    <label for="website">Site web</label>
+                                    <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+                                </div>
+                                <div class="col-12">
+                                    <button id="contactSubmit" class="btn btn-primary btn-lg" type="submit">Envoyer le message</button>
+                                    <p id="contactStatus" class="form-status" role="status" aria-live="polite"></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="container"><div class="footer-bottom border-0 pt-0"><span>&copy; <span id="currentYear"></span> <span class="js-site-name">Services Informatiques en Ligne</span>.</span><a href="services.html">Voir les services</a></div></div></footer>
+    <div id="toastHost" class="toast-host" aria-live="polite" aria-atomic="true"></div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="js/config.js"></script>
+    <script defer src="js/utils.js"></script>
+    <script defer src="js/supabase.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/contact.js"></script>
+</body>
+</html>

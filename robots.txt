@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.env
+Disallow: /node_modules/
+
+Sitemap: https://example.com/sitemap.xml
